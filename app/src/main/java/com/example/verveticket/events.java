@@ -5,6 +5,7 @@ import static android.content.ContentValues.TAG;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -36,7 +37,13 @@ public class events extends AppCompatActivity {
         display=findViewById(R.id.welcomemsg);
         username=findViewById(R.id.userdisplay);
 
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
+       jssrun.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               startActivity(new Intent(events.this,runselect.class));
+               finish();
+           }
+       });
 
 
 

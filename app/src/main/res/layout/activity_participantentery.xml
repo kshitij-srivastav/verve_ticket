@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/cardview_dark_background">
+
+
+    <EditText
+        android:id="@+id/nameedittxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter the Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        >
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter College Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/collegeedittxt">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Email Address"
+        android:id="@+id/emailedittext"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:hint="Phone Number"
+        android:id="@+id/phonenumberedittxt">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:hint="Payment Mode"
+        android:id="@+id/paymentmode">
+
+    </EditText>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitbtn"
+        android:text="Submit"
+        android:layout_marginTop="30dp"
+        >
+
+    </Button>
+
+</LinearLayout>
