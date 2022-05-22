@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "346607831765",
+    "project_id": "verveticket",
+    "storage_bucket": "verveticket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346607831765:android:f162c56eab6423294ab05c",
+        "android_client_info": {
+          "package_name": "com.example.verveticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346607831765-u6i2hgim2jfj3r6k5g59qpsde1qrkvpb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.verveticket",
+            "certificate_hash": "57a372867d3f9fcc9fd62dba20a5d70995112a03"
+          }
+        },
+        {
+          "client_id": "346607831765-q3602kbs25k3krctd2c2f2ohd07tj6hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4MV86AVzapmQNpMlghQgESXUZzbC1FOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346607831765-q3602kbs25k3krctd2c2f2ohd07tj6hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

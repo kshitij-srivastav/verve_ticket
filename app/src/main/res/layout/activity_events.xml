@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".events"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/cardview_dark_background"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome "
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:id="@+id/welcomemsg">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/userdisplay">
+
+    </TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jssrun"
+        android:text="JSS RUN"
+        android:layout_marginTop="50dp">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/concertbtn"
+        android:text="Concert"
+        android:layout_marginTop="50dp">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventsbtn"
+        android:text="Events"
+        android:layout_marginTop="50dp">
+
+    </Button>
+
+
+
+
+
+</LinearLayout>
