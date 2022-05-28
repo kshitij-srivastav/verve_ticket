@@ -59,9 +59,10 @@ public class participantentery extends AppCompatActivity {
                 data.put("isValid",true);
                 data.put("mainEvent","");
                 data.put("name",participantName.getText().toString());
-                data.put("paymentId",paymentMode.getText().toString());
+                data.put("paymentMode",paymentMode.getText().toString());
                 data.put("phone",phoneNum.getText().toString());
                 data.put("refferedBy",  FirebaseAuth.getInstance().getCurrentUser().getUid().toString());
+                data.put("paymentID","");
                 FirebaseFirestore rootRef = FirebaseFirestore.getInstance();
                 CollectionReference usersRef = rootRef.collection("jss_run");
                 usersRef.document(uid).set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -73,7 +74,9 @@ public class participantentery extends AppCompatActivity {
                         emailAdd.setText("");
                         paymentMode.setText("");
                         Toast.makeText(getApplicationContext(),"Registration Successful",Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(participantentery.this,events.class));
+                        Intent i=new Intent(participantentery.this,confirmPayment.class);
+                            i.putExtra("uid",uid);
+                            startActivity(i);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

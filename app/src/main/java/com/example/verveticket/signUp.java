@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class signUp extends AppCompatActivity {
-    EditText t1,t2,t3;
+    EditText t1,t2,t3,t4;
     Button b1;
 
     @Override
@@ -19,7 +19,9 @@ public class signUp extends AppCompatActivity {
         t1=findViewById(R.id.nameedittxt);
         t2=findViewById(R.id.usnedittxt);
         t3=findViewById(R.id.numberedittext);
+        t4=findViewById(R.id.groupnoedittxt);
         b1=findViewById(R.id.btnsignup);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,6 +29,7 @@ public class signUp extends AppCompatActivity {
                 intent.putExtra("mobile",t3.getText().toString());
                 intent.putExtra("name",t1.getText().toString());
                 intent.putExtra("usn",t2.getText().toString());
+                intent.putExtra("groupNO",t4.getText().toString());
                 startActivity(intent);
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             }

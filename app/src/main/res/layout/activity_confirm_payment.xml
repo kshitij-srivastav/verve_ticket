@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmPayment"
+    android:background="@color/cardview_dark_background"
+
+   android:orientation="vertical"
+  >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Payment ID"
+        android:id="@+id/paymentID"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="200dp">
+
+    </EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmPayment"
+        android:layout_marginTop="20dp"
+        android:text="Confirm Payment"
+
+        tools:ignore="InvalidId"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentRejected"
+        android:layout_marginTop="20dp"
+        android:text="Rejected"
+
+        tools:ignore="InvalidId"></Button>
+
+
+  </LinearLayout>

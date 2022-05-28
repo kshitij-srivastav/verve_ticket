@@ -38,7 +38,7 @@ public class verifyafterfirstregister extends AppCompatActivity {
     String phoneNumber="+91";
     String otpid;
     private FirebaseAuth mAuth;
-    String name,usn;
+    String name,usn,groupNo;
 
 
     @Override
@@ -50,6 +50,7 @@ public class verifyafterfirstregister extends AppCompatActivity {
         phoneNumber= phoneNumber+getIntent().getStringExtra("mobile").toString();
         name=getIntent().getStringExtra("name").toString();
         usn=getIntent().getStringExtra("usn").toString();
+        groupNo=getIntent().getStringExtra("groupNO").toString();
         mAuth = FirebaseAuth.getInstance();
         intiateopt();
         verify.setOnClickListener(new View.OnClickListener() {
@@ -123,6 +124,7 @@ public class verifyafterfirstregister extends AppCompatActivity {
         user.put("id",userid);
         user.put("name",name);
         user.put("usn",usn);
+        user.put("groupNo",groupNo);
         db.collection("users")
                 .add(user)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {

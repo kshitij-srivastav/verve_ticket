@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:textColorHint="@color/white"
         android:hint="Enter Your USN"
-        android:id="@+id/usnedittxt">
+        android:id="@+id/usnedittxt"
+        android:layout_marginTop="10dp">
 
     </EditText>
     <EditText
@@ -31,14 +32,28 @@
         android:textColorHint="@color/white"
         android:hint="Enter Your Number"
         android:id="@+id/numberedittext"
-        tools:ignore="DuplicateIds">
+        tools:ignore="DuplicateIds"
+        android:layout_marginTop="10dp"
+        android:inputType="number">
 
     </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Enter Your Group no"
+        android:id="@+id/groupnoedittxt"
+        tools:ignore="DuplicateIds"
+        android:layout_marginTop="10dp">
+
+    </EditText>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create Account"
-        android:id="@+id/btnsignup">
+        android:id="@+id/btnsignup"
+        android:layout_marginTop="20dp">
 
     </Button>
 

@@ -10,11 +10,12 @@
     android:orientation="vertical"
     android:background="@color/cardview_dark_background">
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter OTP"
         android:id="@+id/otpedittxt"
-        android:textColorHint="@color/white">
+        android:textColorHint="@color/white"
+        android:inputType="number">
 
     </EditText>
 

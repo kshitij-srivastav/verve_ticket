@@ -47,7 +47,8 @@
         android:textColorHint="@color/white"
         android:layout_marginTop="20dp"
         android:hint="Phone Number"
-        android:id="@+id/phonenumberedittxt">
+        android:id="@+id/phonenumberedittxt"
+        android:inputType="number">
 
     </EditText>
 
